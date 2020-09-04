@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <title>ADWAITS</title>
+</head>
+<body>
+    <div class="box1">
+        <div class="logo">
+            <img src="logo.png"></img>
+        </div>
+        <div class="headline">
+            <h1>Hello my name is Muhammad Faiz,<br> This is my first assignment.</h1>
+        </div>
+        <div class="bottom">
+            <span class="p1">
+               <p> <span>client:</span> Pvt ltd<p></p> 
+            </span>
+            <span class="p2">
+                <p> <span>focus:</span> UX design,Visual design and web</p>
+            </span>
+            
+        </div>
+    </div>
+    <div class="box2">
+        <div class="video">
+               <!-- <img src="image.png" class="zoom"></img>-->
+            <video width="640" height="500" autoplay muted loop class="zoom">
+                <source src="video.mp4" type="video/mp4">
+            </video> 
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(window).scroll(function() {    
+            var scroll = $(window).scrollTop();
+
+            if (scroll > 700) {
+                $(".zoom").addClass("change");
+            } else {
+                $(".zoom").removeClass("change");
+            }
+        });
+    </script>
+</body>
+</html>
